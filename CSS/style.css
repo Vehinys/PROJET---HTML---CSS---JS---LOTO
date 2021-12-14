@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../IMG/imagenoel.png);
+    background-position: center;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+section .box{
+    width: 140px;
+    height: 140px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    transition: .5s;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    font-family: 'Mountains of Christmas';
+    position: relative;
+}
+
+section .box.active {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+section .box.active img{
+   opacity : 1;
+   transition-duration: 3s;
+   border-radius: 20px;
+}
+
+
+section .box img{
+    width: 130px;
+    position : absolute;
+    opacity : 0;
+}
