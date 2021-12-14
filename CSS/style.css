@@ -12,6 +12,7 @@ body{
     background-image: url(../IMG/lotoBackground.jpg);
     background-position: center;
     background-size: cover;
+    flex-direction: column;
 }
 
 section{
@@ -21,6 +22,7 @@ section{
     width: 900px;
     gap: 10px;
     flex-wrap: wrap;
+    padding-top: 50px
 }
 
 section .box{
