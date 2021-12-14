@@ -1,7 +1,7 @@
     window.addEventListener("DOMContentLoaded", () => {
 
     const section = document.querySelector("section")
-    const nbBox = 49
+    const nbBox = 24
     let colors = [
         "#165b33ce",
         "#146B3Ace",
@@ -12,8 +12,8 @@
     ]
 
     // k = key / v = value
-    // Créer un tableau de 1 à 49 (k = key / v = value)
-    let numeros = Array.from({ length: 49 }, (k, v) => v + 1)
+    // Créer un tableau de 1 à 24 (k = key / v = value)
+    let numeros = Array.from({ length: 24 }, (k, v) => v + 1)
         // Melanger le tableau "numéro sans doublons"
     let shuffle = numeros.sort(() => Math.random() - 0.5)
     console.log(shuffle)
